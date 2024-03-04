@@ -68,7 +68,7 @@ $('.wrapper').each(function() {
             return; // Если прокрутка заблокирована, выходим из обработчика
           }   
         var touch = e.originalEvent.touches[0];
-        var currentY = touch.clientX;
+        var currentY = touch.clientY;
         var deltaY = currentY - startY;
     
         if (deltaY < 0) {
