@@ -59,7 +59,7 @@ $('.wrapper').each(function() {
           }    
         e.preventDefault();
         var touch = e.originalEvent.touches[0];
-        startaY = touch.clientY;
+        startY = touch.clientY;
     });
     
     $slider.on('touchmove', function(e) {
@@ -68,7 +68,7 @@ $('.wrapper').each(function() {
             return; // Если прокрутка заблокирована, выходим из обработчика
           }   
         var touch = e.originalEvent.touches[0];
-        var currentY = touch.clientY;
+        var currentY = touch.clientX;
         var deltaY = currentY - startY;
     
         if (deltaY < 0) {
